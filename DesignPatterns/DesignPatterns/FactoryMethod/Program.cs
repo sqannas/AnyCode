@@ -11,6 +11,7 @@ namespace FactoryMethod
         static void Main(string[] args)
         {
             var factory = new SavingsAcctFactory() as ICreditUnionFactory;
+            //ICreditUnionFactory factory = new SavingsAcctFactory();
             var citiAcct = factory.GetSavingsAccount("CITI-321");
             var nationalAcct = factory.GetSavingsAccount("NATIONAL-987");
 
